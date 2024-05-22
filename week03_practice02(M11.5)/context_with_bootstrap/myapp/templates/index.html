@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block container %}
+    {% for i in meals %}
+        <div class="card" style="width: 18rem;">
+            <img src="{{i.strMealThumb}}" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">{{i.strMeal}}</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum asperiores nostrum nemo fuga mollitia? Harum.</p>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
+
