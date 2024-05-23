@@ -1,0 +1,22 @@
+{% extends 'base.html'%} {% block content%} {%load static %}
+<div class="container">
+  <div class="home-left">
+    <h1>WELCOME TO OUR RESTAURANT!</h1>
+    <p>
+      Discover the true taste of ItalyFood at EatFooD, where we bring the
+      flavors of traditional cuisine right to your table. Our chefs use only the
+      freshest ingredients to craft authentic dishes that will transport you
+      straight to the heart of Town.
+    </p>
+  </div>
+
+  <div class="home-right">
+    <img
+      class="banner-img"
+      src="{% static 'images/restaurant.jpg'%}"
+      alt="image here"
+    />
+  </div>
+</div>
+
+{% endblock %}
